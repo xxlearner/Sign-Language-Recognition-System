@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-to-Speech & Speech-to-Text App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text-to-speech">
+            <h2>Text-to-Speech</h2>
+            <textarea id="textToSpeechInput" placeholder="Enter text"></textarea>
+            <button onclick="convertTextToSpeech()">Convert to Speech</button>
+        </div>
+        
+        <div class="speech-to-text">
+            <h2>Speech-to-Text</h2>
+            <button onclick="startSpeechToText()">Start Recording</button>
+            <p id="speechToTextInput"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
